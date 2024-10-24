@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/home.css">
+    <link rel="stylesheet" href="/assets/css/bannervideo.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="main--div">
+        <header class="main--header">
+            <div class="logo--div">
+                <img src="/assets/images/logo.png" alt="logo" class="logo--img" data-aos="fade-down" data-aos-easing="ease" data-aos-delay="100">
+            </div>
+            <div class="nav--div">
+                <ul class="nav--list">
+                    <li class="nav--item" data-aos="fade-down" data-aos-easing="ease" data-aos-delay="200">
+                        <a href="#"
+                            class="mobile--contact nav--link transition-[0.5s] bg-black hover:bg-transparent hover:text-black text-white border border-[#000]"
+                            >
+                            Contact Us
+                        </a>
+                    </li>
+                    <li class="nav--item togglemenu" data-aos="fade-down" data-aos-easing="ease" data-aos-delay="300">
+                        <a href="#"
+                            class="nav--link transition-[0.5s] bg-transparent hover:bg-black hover:text-white text-black border border-[#000]">
+                            Menu
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </header>
+        <!-- main header -->
+
+
+        <div class="main--menu">
+            <div class="menu--area">
+                <div class="menu--header lg:flex-row flex-col">
+                    <div class="logo--div lg:block flex items-center justify-between">
+                        <img src="/assets/images/logo.png" alt="logo" class="logo--img" data-aos="fade-down" data-aos-easing="ease" data-aos-delay="100">
+                        <ul class="nav--list lg:hidden flex">
+                            <li class="nav--item"><a href="#"
+                                    class="nav--link transition-[0.5s] bg-black hover:bg-transparent hover:text-black text-white border border-[#000]">Contact
+                                    Us</a></li>
+                            <li class="nav--item closemenumobile"><a href="#"
+                                    class="nav--link transition-[0.5s] bg-transparent hover:bg-black hover:text-white text-black border border-[#000]">Close</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="menu--nav">
+                        <div class="w-full max-w-[545px]">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                                tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                        </div>
+
+
+                        <div class="menu--items--list">
+                            <ul class="menu--items">
+                                <li class="menu--item"><a href="#" class="menu--link transition-[0.5s]">
+                                        Home
+                                    </a>
+                                </li>
+                                <li class="menu--item"><a href="#" class="menu--link transition-[0.5s]">
+                                        About
+                                    </a>
+                                </li>
+                                <li class="menu--item"><a href="#" class="menu--link transition-[0.5s]">
+                                        Services
+                                    </a>
+                                </li>
+                                <li class="menu--item"><a href="#" class="menu--link transition-[0.5s]">
+                                        Contact
+                                    </a>
+                                </li>
+                        </div>
+                        <!-- menu items list -->
+
+                    </div>
+
+                    <div class="nav--div lg:flex hidden">
+                        <ul class="nav--list">
+                            <li class="nav--item">
+                                <a href="#"
+                                    class="nav--link transition-[0.5s] bg-black hover:bg-transparent hover:text-black text-white border border-[#000]"
+                                    
+                                    >
+                                    Contact Us
+                                </a>
+                            </li>
+                            <li class="nav--item closemenu" data-aos="fade-down"
+                            data-aos-easing="linear"
+                            data-aos-duration="350"><a href="#"
+                                    class="nav--link transition-[0.5s] bg-transparent hover:bg-black hover:text-white text-black border border-[#000]">Close</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <!-- menu header -->
+
+                <div class="menu--footer">
+                    <div class="menu--heading">
+                        <h2>Social Links</h2>
+                    </div>
+                    <div class="menu--footer--social">
+                        <ul class="menu--footer--social--list">
+                            <li class="menu--footer--social--item">
+                                <a href="#" class="menu--footer--social--link">
+                                    <img src="/assets/images/fb-icon.svg" alt="facebook" />
+                                </a>
+                            </li>
+                            <li class="menu--footer--social--item">
+                                <a href="#" class="menu--footer--social--link">
+                                    <img src="/assets/images/insta-icon.svg" alt="instagram" />
+                                </a>
+                            </li>
+                            <li class="menu--footer--social--item">
+                                <a href="#" class="menu--footer--social--link">
+                                    <img src="/assets/images/twit-icon.svg" alt="twitter" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- toggle menu -->
+
+        <div class="banner-container">
+            <!-- Video Background -->
+            <video id="backgroundVideo" class="banner-video" muted loop>
+                <source src="/assets/images/mainvideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <!-- Overlay Content -->
+            <div class="banner-overlay">
+                <button class="play-button" onclick="togglePlay()" data-aos="zoom-in">
+                    <img id="playIcon" src="/assets/images/play.svg" alt="Play Icon">
+                </button>
+                <h1 class="uppercase"  data-aos="fade-up" data-aos-delay="200">PATHWAYS TO PROGRESS:<br /> DRIVING GROWTH THROUGH ENGINEERING EXCELLENCE</h1>
+            </div>
+        </div>
+
+    </div>
+    <!-- end main div -->
+
+
+    <script src="/assets/js/custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true, 
+        });
+    </script>
+</body>
+
+</html>
