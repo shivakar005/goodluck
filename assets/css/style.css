@@ -46,8 +46,8 @@ header.main--header>.nav--div>.nav--list>li>a {
     height: 100%;
     transform: translateY(-100%);
     transition: all 0.3s ease-in-out;
-    padding: 2rem 0px;
     z-index: 999;
+    overflow: auto;
 }
 
 .main--menu.show {
@@ -60,9 +60,8 @@ header.main--header>.nav--div>.nav--list>li>a {
     max-width: 97%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     height: 100%;
-    overflow: auto;
+    padding: 2rem 0px;
 }
 
 .main--menu>.menu--area>.menu--header {
@@ -207,9 +206,7 @@ header.main--header>.nav--div>.nav--list>li>a {
     .main--menu {
         padding: 1rem 0px;
     }
-    .main--menu>.menu--area {
-        padding: 0px 0.5rem;
-    }
+
 
     .main--menu>.menu--area>.menu--header>.logo--div {
         flex-direction: column-reverse;
