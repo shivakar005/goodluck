@@ -200,6 +200,12 @@ header.main--header>.nav--div>.nav--list>li>a {
 }
 
 @media (max-width: 767px) {
+    .main--menu>.menu--area{
+        padding: 0;
+    }
+    .main--menu>.menu--area>.menu--header {
+        padding: 1rem 0px;
+    }
     .main--div {
         padding: 0px 0.5rem;
     }
@@ -237,12 +243,15 @@ header.main--header>.nav--div>.nav--list>li>a {
         font-size: 14px;
     }
 
-    header.main--header>.nav--div>.nav--list>li>a.mobile--contact {
+    header.main--header>.nav--div>.nav--list>li.mobile--contact{
         position: fixed;
         left: 0px;
-        border-radius: 0px 50px 50px 0px;
         top: 40%;
         z-index: 2;
+    }
+
+    header.main--header>.nav--div>.nav--list>li.mobile--contact>a {
+        border-radius: 0px 50px 50px 0px;
         font-size: 14px;
     }
 }
