@@ -9,7 +9,13 @@ body {
     font-size: 16px;
     color: #333;
 }
-
+.bg-title {
+    font-size: 16.5vw;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #FCAF17;
+    line-height: normal;
+}
 /* header */
 
 .main--div {
@@ -200,6 +206,9 @@ header.main--header>.nav--div>.nav--list>li>a {
 }
 
 @media (max-width: 767px) {
+    .bg-title{
+        font-size: 15.5vw;
+    }
     .main--menu>.menu--area{
         padding: 0;
     }
