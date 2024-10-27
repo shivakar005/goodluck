@@ -1,17 +1,17 @@
-document.addEventListener("DOMContentLoaded", function() {
+
+
     const video = document.getElementById('backgroundVideo');
     const playButtonIcon = document.getElementById('playIcon');
 
     function togglePlay() {
         if (video.paused) {
             video.play();
-            playButtonIcon.src = '/assets/images/pause.svg'; // Change to pause icon
+            playButtonIcon.src = '/assets/images/play.svg'; // Change to pause icon
         } else {
             video.pause();
             playButtonIcon.src = '/assets/images/play.svg'; // Change back to play icon
         }
     }
-
     // Function to animate the counter
     function animateCounter(element) {
         const target = +element.getAttribute('data-target');
@@ -47,4 +47,3 @@ document.addEventListener("DOMContentLoaded", function() {
     document.querySelectorAll('.stratigic--container__item').forEach(item => {
         observer.observe(item);
     });
-});

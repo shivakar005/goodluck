@@ -89,7 +89,7 @@
 
 .stratigic--container > .title-stratigic {
     color: #FCAF17;
-    font-size: 30px;
+    font-size: clamp(20px,2vw,30px);
     text-align: center;
     font-weight: 500;
 }
@@ -119,7 +119,7 @@
 
 .stratigic--container > .stratigic--container__items > .stratigic--container__item > h3 {
     color: #FCAF17;
-    font-size: 30px;
+    font-size: clamp(20px,2vw,30px);
     font-weight: 600;
 }
 
@@ -159,5 +159,8 @@
         max-width: 200px;
         margin: 0 auto;
         margin-top: -50px;
+    }
+    .stratigic--container > .stratigic--container__items > .stratigic--container__item{
+        min-height: auto;
     }
 }
