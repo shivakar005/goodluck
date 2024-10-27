@@ -7,9 +7,12 @@
         if (video.paused) {
             video.play();
             playButtonIcon.src = '/assets/images/play.svg'; // Change to pause icon
+            playButtonIcon.style.opacity = 0.2;
         } else {
             video.pause();
-            playButtonIcon.src = '/assets/images/play.svg'; // Change back to play icon
+            playButtonIcon.src = '/assets/images/play.svg'; 
+            playButtonIcon.style.opacity = 1;
+            
         }
     }
     // Function to animate the counter
