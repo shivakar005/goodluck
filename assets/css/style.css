@@ -178,10 +178,71 @@ header.main--header>.nav--div>.nav--list>li>a {
 
 /* header end */
 
+/* footer */
+.main--footer {
+    background: #fff;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.main--footer > .main--footer__content {
+    padding: clamp(15px,3vw,40px);
+    display: flex;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+.main--footer > .main--footer__content >.main--footer__links > h3 {
+    color: #8B8B8B;
+    font-size: 14px;
+}
+
+.main--footer > .main--footer__content >.main--footer__links > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 13px;
+}
+
+.main--footer > .main--footer__content >.main--footer__links > ul > li > a {
+    font-size: 14px;
+    color: #1B1B1B;
+}
+
+.main--footer > .main--footer__social {
+    padding: clamp(15px,3vw,40px);
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: flex-end;
+}
+.main--footer > .main--footer__content >.main--footer__links {
+    width: auto;
+    max-width: 300px;
+}
+.main--footer > .main--footer__content >.main--footer__links > ul > li > a:hover:after {
+    width: 100%;
+}
+
+.main--footer > .main--footer__content >.main--footer__links > ul > li > a:after {
+    content: '';
+    width: 0%;
+    height: 1px;
+    background: #000;
+    display: block;
+    transition: 0.3s;
+}
+/* footer end */
+
 
 
 /* media quries */
 
+@media (max-width: 1200px) {
+    .main--footer > .main--footer__content{
+        gap: 2rem;
+    }
+}
 @media (max-width: 1023px) {
     .main--menu>.menu--area>.menu--header>.menu--nav {
         width: 100%;
