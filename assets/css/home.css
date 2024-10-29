@@ -58,6 +58,9 @@
     margin-top: 10px;
 }
 
+.about--container-b {
+    padding-bottom: clamp(40px,6vw,100px);
+}
 .chairman--section {
     display: flex;
     padding-top: 150px;
