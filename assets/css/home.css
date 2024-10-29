@@ -358,6 +358,7 @@
     .stratigic--development {
         flex-direction: column;
         padding: 40px 0px;
+        padding-bottom: 0;
     }
     .fixed--banner > .fixed--banner__content {
         top: auto;
@@ -369,6 +370,9 @@
     }
 }
 @media(max-width: 767px) {
+    .about--container>.about--container__title {
+        padding: 20px 0px;
+    }
     .banner-step{
         padding: 13px;
         background-size: cover;
@@ -424,7 +428,7 @@
     }
     
     .fixed--banner > .fixed--banner__content > h3 {
-        font-size: 14px;
+        font-size: 18px;
     }
     
     .fixed--banner > .fixed--banner__content > p {
