@@ -1,0 +1,264 @@
+.services--section {
+    background: #fff;
+    border-top: 1px solid #e5e7eb;
+}
+
+.services--section > .services--section__container {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 50px 20px;
+    background-image: url(/assets/images/bg-circle.png);
+    background-repeat: no-repeat;
+    background-position-y: 108%;
+    background-attachment: fixed;
+    background-position-x: 88%;
+}
+
+.services--section > .services--section__heading-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #174999;
+    min-height: 250px;
+    flex-direction: column;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.services--section > .services--section__heading-banner > h1 {
+    font-size: clamp(20px, 4vw, 60px);
+    font-weight: bold;
+    color: #fff;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.services--section > .services--section__heading-banner > p {
+    font-size: clamp(14px, 1vw, 16px);
+    color: #fff;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.services--section > .services--section__container >.services--items>.services--section__lists {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1%;
+    row-gap: 20px;
+}
+
+.services--section > .services--section__container >.services--items>h2 {
+    font-weight: bold;
+    color: #174999;
+    line-height: normal;
+    margin-bottom: 20px;
+    font-size: clamp(20px, 3vw, 40px);
+}
+
+.services--section > .services--section__container >.services--items>.services--section__lists>.services--section__list {
+    max-width: 24%;
+    width: 100%;
+}
+
+.services--section > .services--section__container >.services--items>.services--section__lists>.services--section__list>.thumb-service>img {
+    width: 100%;
+}
+
+.services--section > .services--section__container >.services--items>.services--section__lists>.services--section__list>.service--content>h3 {
+    font-size: 18px;
+    color: #000;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.services--section > .services--section__container>.services--info {
+    display: flex;
+    gap: 28px;
+    padding: 40px 0px;
+}
+
+.services--section > .services--section__container>.services--info>.services--info__areas {
+    width: 50%;
+    background: #f2f6ff;
+    padding: 20px;
+}
+
+.services--section > .services--section__container>.services--info>.services--info__clients {
+    width: 50%;
+    background: #f2f6ff;
+    padding: 20px;
+}
+
+.services--section > .services--section__container>.services--info>.services--info__clients .stratigic--container__items > .stratigic--container__item {
+    width: 100%;
+    background-image: url(/assets/images/liner-circle.png);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 35px 14px;
+    max-width: fit-content;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 55px;
+    background-size: contain;
+}
+
+.services--section > .services--section__container>.services--info>.services--info__clients> .stratigic--container__items > .stratigic--container__item > h3 {
+    color: #174999;
+    font-size: clamp(25px,5vw,50px);
+    font-weight: 600;
+    line-height: normal;
+}
+.services--section > .services--section__container>.services--info>.services--info__clients> .stratigic--container__items > .stratigic--container__item > p {
+    color: #000;
+    font-size: 20px;
+}
+.services--section > .services--section__container>.services--info>.services--info__clients> .stratigic--container__items > .stratigic--container__item > h3 > span {
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+}
+
+.services--section > .services--section__container >.services--info> .services--info__areas> h2, .services--section > .services--section__container >.services--info> .services--info__clients> h2 {
+    font-weight: bold;
+    color: #174999;
+    line-height: normal;
+    margin-bottom: 20px;
+    font-size: clamp(20px, 3vw, 40px);
+}
+
+
+.services--section > .services--section__container>.industries--services {
+    position: relative;
+    padding-right: 20px;
+}
+
+.services--section > .services--section__container>.industries--services:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    position: absolute;
+    top: 23px;
+    left: 0px;
+    border: 1px solid #efefef;
+    border-radius: 0px 20px 20px 0px;
+    border-left: 0px;
+}
+
+.services--section > .services--section__container>.industries--services>h2 {
+    font-weight: bold;
+    color: #000;
+    line-height: normal;
+    margin-bottom: 20px;
+    font-size: clamp(20px, 3vw, 40px);
+    background: #fcaf17;
+    width: fit-content;
+    z-index: 1;
+    position: relative;
+    padding: 5px 15px;
+}
+
+.services--section > .services--section__container>.industries--services>.industries--services__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 15px;
+    margin-top: 23px;
+    margin-bottom: 30px;
+}
+
+
+.services--section > .services--section__container>.industries--services>.industries--services__items>.industries--services__item {
+    width: 100%;
+    background: #f2f6ff;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 2px 4px 1px #cccccc63;
+    border-radius: 15px;
+}
+
+.services--section > .services--section__container>.industries--services>.industries--services__items>.industries--services__item>p {
+    color: #000;
+    font-size: 15px;
+}
+
+.services--section > .services--section__container>.manufacturing-unit {
+    padding: 60px 0px;
+}
+
+.services--section > .services--section__container>.manufacturing-unit > h2 {
+    font-weight: bold;
+    color: #000;
+    line-height: normal;
+    margin-bottom: 20px;
+    font-size: clamp(20px, 3vw, 40px);
+    z-index: 1;
+    position: relative;
+    padding: 5px 15px;
+    text-align: center;
+}
+
+.services--section > .services--section__container>.manufacturing-unit > img {
+    width: 100%;
+}
+
+.services--section > .services--section__container>.manufacturing-unit> .manufacturing-unit__items {
+    display: flex;
+    gap: 10px;
+}
+
+.services--section > .services--section__container>.manufacturing-unit > .manufacturing-unit__items > img {
+    width: 100%;
+}
+
+@media(max-width:1024px){
+    .services--section > .services--section__container >.services--items>.services--section__lists {
+        justify-content: space-between;
+        row-gap: 30px;
+    }
+    
+    .services--section > .services--section__container >.services--items>.services--section__lists>.services--section__list {
+        max-width: 49%;
+    }
+
+    .services--section > .services--section__container>.industries--services>.industries--services__items {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+@media(max-width:991px){
+    .services--section > .services--section__container >.services--items>.services--section__lists {
+        justify-content: space-between;
+        row-gap: 30px;
+    }
+    
+    .services--section > .services--section__container >.services--items>.services--section__lists>.services--section__list {
+        max-width: 49%;
+    }
+    
+    .services--section > .services--section__container>.services--info>.services--info__areas,.services--section > .services--section__container>.services--info>.services--info__clients {
+        width: 100%;
+    }
+    
+    .services--section > .services--section__container>.services--info {
+        flex-wrap: wrap;
+    }
+    .services--section > .services--section__container>.manufacturing-unit> .manufacturing-unit__items {
+        flex-direction: column;
+    }
+}
+@media(max-width:580px){
+    .services--section > .services--section__container >.services--items>.services--section__lists {
+        flex-wrap: wrap;
+    }
+    
+    .services--section > .services--section__container >.services--items>.services--section__lists>.services--section__list {
+        max-width: 100%;
+    }
+}
