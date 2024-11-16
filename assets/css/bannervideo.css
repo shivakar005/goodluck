@@ -2,8 +2,6 @@
 .banner-container {
     overflow: hidden;
     position: relative;
-    width: 100%;
-    height: calc(100vh - 95px);
 }
 
 .banner-container:before {
@@ -18,17 +16,6 @@
     opacity: 0.8;
 }
 
-.banner-video {
-    position: absolute;
-    top: 0%;
-    left: 50%;
-    width: auto;
-    height: auto;
-    transform: translateX(-50%);
-    object-fit: cover;
-    min-height: 100%;
-}
-
 .banner-overlay {
     position: absolute;
     text-align: center;
@@ -37,7 +24,7 @@
     bottom: 1%;
     left: 1%;
     width: 100%;
-    max-width: 50px;
+    max-width: 150px;
 }
 
 /* Heading */
