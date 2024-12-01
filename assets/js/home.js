@@ -3,7 +3,7 @@ const backgroundVideo = document.getElementById("backgroundVideo");
 const muteToggleButton = document.getElementById("muteToggleButton");
 const muteIcon = document.getElementById("muteIcon");
 
-muteToggleButton.addEventListener("click", () => {
+muteToggleButton.addEventListener("click", () => { 
     // Toggle mute property
     backgroundVideo.muted = !backgroundVideo.muted;
     
