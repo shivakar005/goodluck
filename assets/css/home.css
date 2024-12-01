@@ -525,6 +525,9 @@ button.tablinks.active>img {
         width: 92%;
         bottom: 6%;
     }
+    .banner-container{
+        overflow: hidden;
+    }
 }
 @media(max-width: 767px) {
   
