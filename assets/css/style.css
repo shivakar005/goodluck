@@ -23,10 +23,11 @@ body {
     margin: 0 auto;
     width: 100%;
     /* max-width: 97%; */
+    padding-top: 94px;
 }
 
 header.main--header {
-    padding: 2rem 2rem;
+    padding:1.2rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -34,7 +35,10 @@ header.main--header {
     background: #fff;
     box-shadow: 0px 1px 7px 5px #00000021;
     z-index: 999;
-    position: relative;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
 header.main--header>.nav--div>.nav--list {
@@ -336,6 +340,7 @@ header.main--header>.logo--div>a>img {
     background: #fff;
     width: 100% !important;
     max-width: 100% !important;
+    height: auto !important;
 }
 
 .main--footer > .main--footer__content {
@@ -343,6 +348,7 @@ header.main--header>.logo--div>a>img {
     display: flex;
     gap: 5rem;
     flex-wrap: wrap;
+    padding-bottom: 10px;
 }
 
 .main--footer__logo > img {
@@ -373,6 +379,7 @@ header.main--header>.logo--div>a>img {
     gap: 0.5rem;
     align-items: center;
     justify-content: flex-end;
+    padding-top: 0px;
 }
 .main--footer > .main--footer__social > a > img {
     width: 40px;
@@ -519,6 +526,34 @@ header.main--header>.logo--div>a>img {
     background: #fcaf17 ;
 }
 
+#scrollTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    z-index: 100;
+    background-color: #174999;
+    color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 18px;
+    height: 50px;
+    /* border: 1px solid #fff; */
+    align-items: center;
+    justify-content: center;
+    background-image: url(../../assets/images/top-arrow.png);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  #scrollTopBtn:hover {
+    background-color: #333; /* Add a darker background on hover */
+  }
+
 
 /* media quries */
 
@@ -561,7 +596,8 @@ header.main--header>.logo--div>a>img {
         padding: 1rem 0px;
     }
     .main--div {
-        padding: 0px 0.5rem;
+        padding-left:0.5rem;
+        padding-right:0.5rem;
     }
 
     .main--menu {
@@ -644,5 +680,8 @@ header.main--header>.logo--div>a>img {
     } */
     header.main--header>.logo--div>a>img, .main--menu>.menu--area>.menu--header>.logo--div>a>img {
         width: 200px;
+    }
+    .main--div {
+        padding-top: 75px;
     }
 }
