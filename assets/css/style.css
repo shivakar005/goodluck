@@ -17,6 +17,26 @@ body {
     line-height: normal;
     opacity: 0.8;
 }
+
+.createby {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    padding: 20px 10px;
+    border-top: 1px solid #f3f3f3;
+    flex-wrap: wrap;
+}
+
+.createby > a > img {
+    width: 100px;
+}
+
+.createby > a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
 /* header */
 
 .main--div {
@@ -104,7 +124,7 @@ header.main--header>.logo--div>a>img {
     height: 100%;
     transform: translateY(-100%);
     transition: all 0.3s ease-in-out;
-    z-index: 999;
+    z-index: 999999;
     overflow: auto;
     background-image: url(../../assets/images/journy-banner.png);
     background-size: cover;
@@ -529,7 +549,7 @@ header.main--header>.logo--div>a>img {
 #scrollTopBtn {
     display: none;
     position: fixed;
-    bottom: 100px;
+    bottom: 170px;
     right: 20px;
     z-index: 100;
     background-color: #174999;
@@ -553,6 +573,34 @@ header.main--header>.logo--div>a>img {
   #scrollTopBtn:hover {
     background-color: #333; /* Add a darker background on hover */
   }
+
+  .sticky--btn {
+    position: fixed;
+    top: 50%;
+    box-shadow: none;
+    z-index: 99999;
+    right: 0;
+    transition: transform .3s cubic-bezier(0,0,0,1);
+    -webkit-transition: -webkit-transform .3s cubic-bezier(0,0,0,1);
+}
+
+.sticky--btn > a {
+  transform: translate3d(4px,0,0) rotate(-90deg);
+  -webkit-transform: translate3d(4px,0,0) rotate(-90deg);
+  border-radius: 3px 3px 0 0;
+  transform-origin: 100% 100%;
+  -webkit-transform-origin: 100% 100%;
+  padding: 6px 15px 12px;
+  font-size: 18px;
+  display: inline-block;
+  position: relative;
+  transition: transform .3s;
+  -webkit-transition: -webkit-transform .3s;
+  background-color: black;
+  color: white;
+  top: -160.5px;
+  font-weight: 500;
+}
 
 
 /* media quries */
