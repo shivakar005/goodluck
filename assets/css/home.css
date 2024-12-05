@@ -400,6 +400,12 @@
     margin-bottom: 20px;
 }
 
+.map--img {
+    max-width: 1500px;
+    margin: 0 auto;
+    width: 95%;
+    margin-bottom: 50px;
+}
 
 .stratigic--development > .stratigic--catifications 
  > .stratigic--catifications__items {
