@@ -325,7 +325,7 @@ header.main--header>.logo--div>a>img {
 .main--menu>.menu--area>.menu--footer {
     background: #fff;
     padding: 2rem;
-    display: flex;
+    display: none !important;
     justify-content: space-between;
     gap: 10px;
     margin-top: auto;
@@ -400,6 +400,7 @@ header.main--header>.logo--div>a>img {
     align-items: center;
     justify-content: flex-end;
     padding-top: 0px;
+    display: none !important;
 }
 .main--footer > .main--footer__social > a > img {
     width: 40px;
